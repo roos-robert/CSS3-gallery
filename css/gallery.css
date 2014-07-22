@@ -1,0 +1,152 @@
+/* Script written by Robert Roos at http://www.robertroos.eu */
+/* Making sure the HTML5-tags are presented as blocks */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main
+{
+    display: block;
+}
+
+/* Settings to be used for the whole document */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #e1e1e1;
+    font-family: 'Shadows Into Light Two', Georgia, Tahoma, Verdana, Arial;
+    font-size: 14pt;
+    line-height: 140%;
+    color: #353535;
+}
+    
+
+/* DIVs */
+
+header {
+    width: 98%;
+    padding-left: 2%;
+}
+    
+#container {     
+    width: 96%;
+    margin: 4% 0% 4% 4%;
+    
+}
+    
+#images {
+    float: left;
+    width: 78%;
+    border-right: 1px solid;
+    border-color: #9e8a71;
+    clear: both;
+}
+
+#side {
+    float: right;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 50px;
+    font-size: 8pt;
+    padding-top: 100px;
+}
+
+
+/* Settings for pics and CSS3-effects for the gallery */
+
+
+#images a {
+    width: 220px;
+    background-color: #ffffff;
+    padding: 10px 10px 20px 10px;
+    margin: -0px;
+    float: left;
+    
+    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+    -webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+        
+    -webkit-transition: all .3s ease-out; 
+    -moz-transition: all .3s ease-out; 
+    transition: all .3s ease-out;
+    
+    position: relative;
+    display: block;
+    border: 1px solid;
+    border-color: #e1e1e1;
+    z-index: 1;
+}
+
+#images a:hover {
+    z-index: 10;
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    
+    -webkit-box-shadow: 4px 4px 20px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 4px 4px 20px rgba(50, 50, 50, 0.75);
+    box-shadow: 4px 4px 20px rgba(50, 50, 50, 0.75);   
+}
+
+#images a:nth-child(3n+3){
+    -webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+    font-size: 18pt;
+    z-index: 2;
+}
+
+#images a:nth-child(3n+3):hover{
+    z-index: 10;
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+#images a:nth-child(5n+5){
+    -webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+    font-size: 12pt;
+    z-index: 3;
+}
+
+#images a:nth-child(5n+5):hover{
+    z-index: 10;
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+#images a:nth-child(8n+8){
+    -webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+    font-size: 12pt;
+    z-index: 3;
+}
+
+#images a:nth-child(8n+8):hover{
+    z-index: 10;
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+#images a:after{
+    content: attr(title);
+    color: #1958b2;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
